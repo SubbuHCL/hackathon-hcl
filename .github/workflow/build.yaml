@@ -8,22 +8,19 @@ permissions:
   id-token: write  
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          ref:  develop
-      
+    - name: Checkout code
+
 
     # Set up Docker Buildx
     - name: Set up Docker Buildx
-      
+
 
     - name: configure aws credentials
-     
+
 
     # Log in to Amazon ECR
     - name: Log in to Amazon ECR
