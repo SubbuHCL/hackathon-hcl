@@ -8,11 +8,14 @@ permissions:
   id-token: write  
 
 jobs:
-  build-and-push:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref:  develop
       
 
     # Set up Docker Buildx
